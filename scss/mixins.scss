@@ -11,7 +11,8 @@
     color: $color;
     text-decoration: none;
     &:hover {
-        background-color: $hcolor;
+       /* a la place de la ligne suivante: mettre l icone en bleu clair une fois l icone ajoute*/
+       border-top: 5px solid $hcolor;
     }
 }
 @mixin admin-shortcut-button($color, $bgcolor, $bdcolor, $hcolor) {
