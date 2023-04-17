@@ -7,8 +7,6 @@ main {
     }
     .blog-actualites {
         flex: 2;
-        border: 1px solid black;
-        /*padding: 50;*/
     }
     
     .acces-rapides{
@@ -47,7 +45,6 @@ main {
     }
 
     .sidebar-agenda {
-        border: 1px solid blue;
         flex: 1;
         display: flex;
         flex-direction: column;
@@ -55,7 +52,6 @@ main {
             @include plus-button(red,white);
         }
         .article{
-            border: 1px solid aquamarine;
             display:flex;
             .article-img{
             width: 100%;
