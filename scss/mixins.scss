@@ -1,0 +1,34 @@
+@mixin nav-button($color, $bgcolor, $hcolor) {
+    background-color: $bgcolor;
+    color: $color;
+    text-decoration: none;
+    &:hover {
+        border-top: 5px solid $hcolor;
+    }
+}
+@mixin location-button($color, $bgcolor,$hcolor) {
+    background-color: $bgcolor;
+    color: $color;
+    text-decoration: none;
+    &:hover {
+        background-color: $hcolor;
+    }
+}
+@mixin admin-shortcut-button($color, $bgcolor, $bdcolor, $hcolor) {
+    background-color: $bgcolor;
+    color: $color;
+    border-top: 2px solid $bdcolor;
+    text-decoration: none;
+    &:hover {
+        border-top: 2px solid $hcolor;
+    }
+}
+@mixin plus-button($color, $bgcolor) {
+    background-color: $bgcolor;
+    color: $color;
+    text-decoration: none;
+    &:hover {
+        color: $bgcolor;
+        background-color: $color;
+    }
+}

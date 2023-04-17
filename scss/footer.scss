@@ -1,0 +1,13 @@
+footer {
+    width: 80%;
+    margin: 0 auto;
+    nav {
+        ul {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            list-style: none;
+            color: blue;
+            }
+        }
+}

@@ -1,0 +1,30 @@
+header {
+    width: 100%;
+    margin: 0 auto;
+    font-family: MonserratVariable, Montserrat, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 2 ; 
+    /*flex-grow: 0*/
+    ul {
+        /*border: 5px solid black;*/
+        height: 60px;
+        list-style: none;
+        margin: 0;
+        padding: 15;
+        gap: 16px;
+        display: flex;        
+        align-items: stretch;
+        /*justify-content:space-around;*/
+        a {
+            @include nav-button(black,white,black);
+        }
+    }
+    ul>li:last-child{
+        justify-content: flex-end;
+        a {
+            @include nav-button(blue,white,blue);
+        }
+    }
+        
+}

@@ -1,0 +1,85 @@
+main {
+    width: 100%;
+    font-family: 'MonserratVariable', 'Montserrat', sans-serif;
+    .flex-container{
+        display: flex;
+    }
+    .blog-actualites {
+        flex: 4;
+        border: 1px solid black;
+        /*padding: 50;*/
+    }
+    .sidebar-agenda {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        /*align-items: center;*/
+        border: 1px solid blue;
+        .evenement{
+            display:flex;
+            .agenda-article-img{
+                display:block;
+            }
+        
+        }
+    }
+
+    .acces-rapides{
+        flex: 1;
+    
+    }
+
+    .location{
+        list-style-type: none;   
+        a{
+            @include location-button(blue,white,black);
+        }   
+    }
+
+    .admin-shortcut{
+        list-style-type: none;   
+      
+    }
+
+    
+    .sidebar-pratique{
+        flex: 1;
+        display: flex;
+        /*flex-direction: column;*/
+        /*align-items: center;*/
+        border: 1px solid blue;
+        .acces-rapides-lieux {
+            list-style-type: none; 
+            display: flex; flex-direction: column; align-items: center;
+            gap: 0px; margin: 20px; padding: 0px;
+            background-color: aqua;          
+        }
+        .btn-lieux {
+            border: 1px solid red;
+            color: blue; background-color: grayscale($color: #e2dddd);
+            font-size: 10px;
+            padding: 10px; margin: 5px;
+        }  
+        .acces-rapides-administratifs{
+            list-style-type: none;
+            border-top: 2px solid grey;
+            font-size: 1.2rem;
+            line-height:2em; 
+            padding: 20px; margin: 0px; gap: 10px; 
+            a {
+                @include lien-button(black,white,black);
+            }   
+        }
+    }
+
+    
+
+    
+    
+    .redbutton{
+        display: block;
+        a {
+            @include red-button(red,white);
+        }   
+    }
+}

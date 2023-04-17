@@ -1,0 +1,68 @@
+main {
+    width: 100%;
+    font-family: 'Montserrat Variable Font', 'Montserrat', sans-serif;
+    color: $black;
+    .flex-container{
+        display: flex;
+    }
+    .blog-actualites {
+        flex: 2;
+        border: 1px solid black;
+        /*padding: 50;*/
+    }
+    
+    .acces-rapides{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 10px;
+        font-weight: 400;
+        }
+    .location{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 50px;
+        font-weight: bolder;
+        a{
+            @include location-button(black,$greybg,blue);
+            padding: 10px;
+        } 
+        li:last-child{
+            a{
+                @include plus-button(red,white);
+            }
+        }
+    }
+    .admin-shortcut{
+        list-style-type: none;
+        font-size: 16px;
+        line-height: 80px;
+        a{
+            @include admin-shortcut-button(black,white, $greybg, black);
+            padding: 20px;
+        }      
+    }
+
+    .sidebar-agenda {
+        border: 1px solid blue;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        a{
+            @include plus-button(red,white);
+        }
+        .article{
+            border: 1px solid aquamarine;
+            display:flex;
+            .article-img{
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-top: 20px;
+            }
+        }
+    }
+}
